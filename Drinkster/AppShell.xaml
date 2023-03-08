@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Drinkster.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Drinkster"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="Home" Icon="house.png">
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+        </Tab>
+        <Tab Title="Diskoteker" Icon="cocktail.png">
+           <ShellContent
+                Title="Diskoteker"
+                ContentTemplate="{DataTemplate local:BarLocationsMapPage}"
+                Route="BarLocationsMapPage" />
+        </Tab>
+        <Tab Title="Søg" Icon="search.png">
+           <ShellContent
+                Title="Søg"
+                ContentTemplate="{DataTemplate local:BarLocationsMapPage}"
+                Route="BarLocationsMapPage" />
+        </Tab>
+        <Tab Title="Profil" Icon="user.png">
+           <ShellContent
+                Title="Profil"
+                ContentTemplate="{DataTemplate local:BarLocationsMapPage}"
+                Route="BarLocationsMapPage" />
+        </Tab>
+    </TabBar>
+</Shell>
